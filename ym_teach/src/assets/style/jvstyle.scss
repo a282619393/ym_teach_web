@@ -1,0 +1,226 @@
+$fontSize:16px;
+$fontFamily1:"medium";  //中等字体
+$fontFamily2:"bold";  //加粗字体
+$color1:#ffffff;
+$color2:#b9b9b9;
+$color3:#999;
+$color4:#0067E4;
+$radius:4px;
+$bgColor1:#ffffff;
+$bgLinear:linear-gradient(90deg,#86c7ff,#0076fa);
+$bgLinear1: linear-gradient(90deg,#76b4ff,#0060d5);
+$btnPadding:9.5px 25px;
+$btnPadding1:8.5px 25px;
+$btnBorder:#b9b9b9 solid 1px;
+$btnBorder1:#999 solid 1px;
+$principalPadding:33px 0 25px 0;
+$headMargin:0px 33px 25px 33px;
+// 管理主页、新增页面主样式
+.principal_index,.principal_add{
+  background: $color1;
+  padding:$principalPadding;
+  font-family: $fontFamily1;
+}
+// 右上样式
+.headContent{
+  margin:$headMargin;
+  text-align: left;
+  font-size: $fontSize;
+}
+// 右中样式
+.mainContent{
+  margin:30px 0;
+}
+// 右上第一行样式
+.firstRow,.orderRow{
+  display: flex;
+  justify-content: space-between;
+}
+// 教师管理跟校长管理第一行样式
+.firstRow{
+  height:40px
+}
+.specialRow{
+  margin-top: 30px;
+  .el-input{
+    width:16%;
+  }
+  .el-input__inner{
+    height: 42px;
+  }
+  .searchMar{
+    margin-right:30px ;
+  }
+  
+}
+// 右上教师管理跟校长管理第二行样式
+.secondRow{
+  font-size:16px;
+  margin: 30px 0;
+  
+}
+.orderSpecialRow{
+  margin-bottom: 30px;
+}
+// 右上第三行及订单右上第二行样式
+.thirdRow,.OrderNumRow{
+  color:$color4;
+  font-size:18px;
+  font-family: $fontFamily2;
+}
+// 订单右上第二行样式
+.OrderNumRow{
+  margin: 45px 0 40px 0;
+}
+.teachOneRow{
+  margin-left:72%;
+  margin-bottom: 30px;
+}
+// 主按钮样式
+.newBtn,.minorBtn,.goBack{
+  font-size: $fontSize;
+  font-family: $fontFamily1;
+  color:$color1;
+  border-radius: $radius;
+  background: $bgLinear;
+  padding:$btnPadding;
+  border:0;
+  outline:0;
+  cursor:pointer;
+  &:hover{
+    background:$bgLinear1;
+  }
+}
+// 次按钮样式
+.minorBtn{
+  color:$color2;
+  background: $bgColor1;
+  border:$btnBorder;
+  padding: $btnPadding1;
+  &:hover{
+    color:$color3;
+    background: $bgColor1;
+    border:$btnBorder1;
+  }
+}
+.goBack{
+  padding:0;
+  position: absolute;
+  top: 18px;
+  left: 92%;
+  width:96px;
+  height:40px;
+  border:1px solid rgba(0,103,228,1);
+  border-radius:20px;
+  background: rgba(0,103,228,0);
+  color: #0067E4;
+  &:hover{
+    background:linear-gradient(90deg,rgba(134,199,255,1) 0%,rgba(0,118,250,1) 100%);
+    border-radius:20px;
+    color: #fff;
+    border: 0;
+  }
+  &:active{
+    background:linear-gradient(90deg,rgba(118,180,255,1) 0%,rgba(0,96,213,1) 100%);
+    border-radius:20px;
+    color: #fff;
+    border: 0;
+  }
+}
+.newBtnSpace{
+  margin-left: 45px;
+  padding:7px 23px;
+}
+// 合作状态下拉框样式
+.coopState{
+  width:7%;
+}
+// 订单状态下拉框样式
+.orderRow .coopState{
+  width:110px;
+}
+// 三级联动下拉框样式
+.linkage{
+  display: inline;
+}
+// 订单第二行文字样式
+.text2{
+  margin:0 1.5% 0 3%;
+}
+// 订单第二行文字样式
+.text4{
+  margin-left:48px;
+}
+// 右下分页行样式
+.alignSite{
+  text-align: right;
+  padding:20px 80px 25px 0;
+}
+// 弹框提示条样式
+.hint{
+  padding: 6px 0 13px 0;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+// 弹框提示条文字样式
+.hintText{
+  font-size: 12px;
+  color: #FF6666;
+  margin-left: 7px;
+}
+// 第二个弹出框样式
+.dialogTwo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 57px 0 40px 0;
+  img{
+    margin:0 18px 0;
+  }
+  .dialogText1{
+    color: #333333;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .dialogText2{
+    color: #999999;
+    font-size: 14px;
+  }
+}
+// 第三个弹出框样式
+.dialogThree{
+  margin-top:25px ;
+  span{
+    font-size:16px;
+  }
+  .hintFloat{
+    position: absolute;
+    top: 26%;
+    right: 8%;
+  }
+}
+// 新增、编辑标题样式
+.titleStyle{
+  margin: 9px 0 43px 49px;
+  font-family:'bold';
+  font-size: 18px;
+}
+// 新增、编辑标题文字样式
+.titleContent{
+  font-size: 16px;
+}
+// 新增、编辑页面行间距
+.dist,.site{
+  margin:24px 0;
+}
+// 新增、编辑按钮行样式
+.btnRow{
+  margin:30px 0 56px 0;
+}
+// 图标颜色样式
+.icon1{
+  color: #F56C6C;
+}
+

@@ -1,0 +1,271 @@
+@charset "utf-8";
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+div,
+p,
+section,
+header,
+footer,
+ul,
+li,
+table,
+ol,
+dl,
+dd,
+dt {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "microsoft yahei";
+  color: #333333;
+  position: relative;
+  // background: #eee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+i,
+em,
+u {
+  font-style: normal;
+  text-decoration: none;
+}
+
+img {
+  border-style: none;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+  cursor: pointer;
+}
+
+a,
+input,select,textarea {
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  background: none;
+  outline: none;
+  font-family: "microsoft yahei";
+  // outline: none;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.overtext {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.textCen {
+  text-align: center;
+}
+.select-demo {
+  display: inline-block;
+  width: 100px;
+  height: 25px;
+  line-height: 25px;
+  padding-left: 6px;
+  border: 1px solid red;
+
+}
+ .study-title{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 50px;
+  font-size: 16px;
+  font-weight: 600;
+
+  img{
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+ }
+ .btnStyle {
+  width: 158px;
+  margin: 20px auto;
+}
+.el-select-dropdown__item{
+  padding: 0 20px;
+}
+ .choice-type-text{
+    width: 47px;
+    height: 55px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    position: absolute;
+    top:0;
+    left: 23px;
+    z-index: 5;
+ }
+ .choice-quan{
+   border: 1px solid #ff7927;
+   color: #ff7927;
+   padding: 0 5px;
+   font-size: 12px;
+   position: absolute;
+   left: 10px;
+   top:56px;
+ }
+ .transitionbtn {
+  width: 1077px;
+  margin: 30px auto 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.el-badge__content.is-fixed{
+  right: 40px;
+  background: #FF2222;
+  height: 21px;
+  line-height: 21px;
+}
+.subject_com{
+  padding: 30px 30px 0 0;
+  position: relative;
+  .items-title{
+    font-size:14px;
+    font-weight:bold;
+    color:#222222FF;
+    font-family:PingFang SC;
+    width:134px;
+    height:52px;
+    background:rgba(0,103,228,1);
+    border-radius:12px 12px 0px 0px;
+    padding-top: 2px;
+    .items-title-tab{
+      width:134px;
+      height:50px;
+      line-height: 50px;
+      text-align: center;
+      background:rgba(255,255,255,1);
+      border-radius:12px 12px 0px 0px;
+      cursor: pointer;
+    }
+  }
+}
+
+.pageCon{
+  padding: 30px  ;
+  text-align: right;
+}
+.monitor-table .warning-row {
+  background: #fff;
+}
+
+.monitor-table .success-row {
+  background: #F6F7F9;
+}
+.backTo{
+  width:96px;
+  height:40px;
+  text-align: center;
+  line-height: 38px;
+  cursor: pointer;
+  border:1px solid #0067E4;
+  color:#0067E4;
+  border-radius:20px;
+  margin: 15px 0;
+  img{
+    vertical-align: middle;
+  }
+}
+.details-top-btn {
+  max-width: 150px;
+  height: 40px;
+  padding:0 20px;
+  line-height: 40px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(134, 199, 255, 1) 0%, rgba(0, 118, 250, 1) 100%);
+  border-radius: 4px;
+
+}
+.monitor-call {
+  width: 88px;
+  height: 88px;
+  padding: 10px;
+  text-align: center;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0px 3px 9px 0px rgba(48, 51, 45, 0.15);
+  border-radius: 50%;
+  position: absolute;
+  right: 16px;
+  top: -50px;
+  z-index: 9;
+  cursor: pointer;
+  &:hover {
+    color: #0067E4;
+  }
+}
+.table-bg{
+  background: #fff;
+  position: relative;
+}
+.recordLink {
+  color: rgba(57, 129, 255, 1);
+  cursor: pointer;
+}
+.errAnswer {
+  color: #FF2222FF;
+}
+
+
+.callList .el-table__empty-block ,.monitor .el-table__empty-block {
+  height: 500px !important;
+  width: 1626px !important;
+}
